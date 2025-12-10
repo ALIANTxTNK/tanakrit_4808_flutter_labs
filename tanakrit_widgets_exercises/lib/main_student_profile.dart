@@ -1,3 +1,10 @@
+//A custom widget StudentProfile
+//
+//This widget display Name and ID have been seperate Text widgets
+//Both texts:Bold, 24 pixel font size, centered horizon and vertical
+//and have blue color
+//@author Tanakrit Waree
+//@date 2025-12-10
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,10 +19,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      //debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        //useMaterial3: true,
-        //colorSchemeSeed: ,
+        useMaterial3: true,
+
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -31,9 +37,9 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 0, 6, 177)),
       ),
-      home: const MyHomePage(title: ' StudentProfile'),
+      home: const MyHomePage(title: 'StudentProfile'),
     );
   }
 }
@@ -57,19 +63,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
+  
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -107,19 +101,15 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            const Text('Tanakrit Waree'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+            const Text('Tanakrit Waree', 
+            style:TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            const Text("663040480-8",style:TextStyle(
+              fontSize: 24, fontWeight: FontWeight.bold)), 
+            
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      
     );
   }
 }
