@@ -18,7 +18,7 @@ class QuoteCard extends StatelessWidget {
         useMaterial3: true,
         colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 0, 6, 177)),
       ),
-      home: const MyHomePage(title: 'My Favourite Qoute'),
+      home: const MyHomePage(title: 'My Favourite Quote'),
     );
   }
 }
