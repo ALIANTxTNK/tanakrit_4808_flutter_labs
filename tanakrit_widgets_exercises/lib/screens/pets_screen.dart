@@ -12,7 +12,7 @@ class PetsScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      
       appBar: AppBar(title: Text("My Pet App"),),
       body: Center(
         child: Column(
@@ -21,8 +21,12 @@ class PetsScreen extends StatelessWidget{
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Expanded(child: PetCard(imagePath: "https://ichef.bbci.co.uk/news/976/cpsprodpb/67CF/production/_108857562_mediaitem108857561.jpg", 
-                petName: "Bird")),
+                Expanded(
+                  child: PetCard(
+                    imagePath: "https://ichef.bbci.co.uk/news/976/cpsprodpb/67CF/production/_108857562_mediaitem108857561.jpg", 
+                    petName: "Bird"
+                  )
+                ),
                 Expanded(child: PetCard(imagePath: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg", 
                 petName: "Dog")),
               ],
