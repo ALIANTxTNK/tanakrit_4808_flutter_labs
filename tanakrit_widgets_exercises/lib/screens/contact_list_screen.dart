@@ -1,3 +1,14 @@
+// ============================================
+// AI DOCUMENTATION
+// No AI tools were used for this file.
+// All code written independently.
+//
+// I create all file and then i do scraffolding and layout by myself. start with appbar and then body with listview.separated.
+// After that i create floating action button to add new contact to the list.and i create a function to add new contact to the list.
+// @author Tanakrit Waree
+// @date 2026-1-28
+// ============================================
+
 import 'package:flutter/material.dart';
 import 'package:tanakrit_widgets_exercises/models/contract_model.dart';
 
