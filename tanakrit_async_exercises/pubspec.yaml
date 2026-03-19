@@ -10,10 +10,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^1.6.0
+  flutter_dotenv: ^6.0.0
 
-  path: ^1.8.0
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
 
 dev_dependencies:
   lints: ^6.0.0
   test: ^1.25.6
-  http: ^1.6.0
