@@ -9,7 +9,7 @@
 // Help me to do lab by teaching me step by step to finish this lab and why reddd
 //
 // VERIFICATION:
-// I understandmore about json Data model json > class > object and why reddd
+// I understandmore about json Data model json > class > object and why reddd.
 //
 // MODIFICATIONS:
 // Solution: Added headers to resolve university network issues.
