@@ -3,7 +3,8 @@ class User {
   final String name;
   final String company;
 
-  User({required this.id, 
+  User({
+  required this.id, 
   required this.name, 
   required this.company});
 

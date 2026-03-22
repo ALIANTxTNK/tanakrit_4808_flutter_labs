@@ -1,10 +1,25 @@
+// ============================================
+// AI DOCUMENTATION
+// Tool: ChatGPT
+// Prompt: The chat helps guide you through the process, teaching you step-by-step and explaining why things are the way they are, why i can't push into github
+// ============================================
+//
+// EXPLANATION (in my own words):
+// i have big problem about github
+//
+// VERIFICATION:
+// but git problem still remain
+//
+// MODIFICATIONS:
+// About git pushing
+// Author: Tanakrit Waree
+// Date: 2026-03-15
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:tanakrit_async_exercises/models/album.dart';
 
-// ต้องเป็น async เพราะต้อง await dotenv.load() ก่อน runApp
 Future<void> main() async {
   await dotenv.load(fileName: ".env");
   runApp(const MyApp());
@@ -111,9 +126,7 @@ class _AlbumScreenState extends State<AlbumScreen> {
       itemCount: albums.length,
       itemBuilder: (context, index) {
         final album = albums[index];
-        return ListTile(
-          title: Text('${album.id}. ${album.title}'),
-        );
+        return ListTile(title: Text('${album.id}. ${album.title}'));
       },
     );
   }
